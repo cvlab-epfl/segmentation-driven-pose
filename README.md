@@ -1,2 +1,9 @@
-# segmentaion-driven-6d-pose
-Repository for "Segmentation-driven 6D Object Pose Estimation" CVPR 2019
+# Segmentation-driven 6D Object Pose Estimation
+
+Repository for
+
+>Segmentation-driven 6D Object Pose Estimation
+>
+>Yinlin Hu, Joachim Hugonot, Pascal Fua, Mathieu Salzmann
+>
+>CVPR 2019
