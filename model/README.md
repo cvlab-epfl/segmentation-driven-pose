@@ -1,9 +1,7 @@
-# Segmentation-driven 6D Object Pose Estimation
+The pretrained models for Occluded-LINEMOD and YCB-Video dataset are online:
 
-Repository for
+Occluded-LINEMOD: https://1drv.ms/u/s!ApOY_gOHw8hLbbdmVZgnqk30I5A 
 
->Segmentation-driven 6D Object Pose Estimation
->
->Yinlin Hu, Joachim Hugonot, Pascal Fua, Mathieu Salzmann
->
->CVPR 2019
+YCB-Video: https://1drv.ms/u/s!ApOY_gOHw8hLbLl4i8CAXD6LGuU
+
+Download and put them into this folder.
