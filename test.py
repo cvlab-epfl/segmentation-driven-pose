@@ -51,14 +51,14 @@ def evaluate(data_cfg, weightfile, listfile, outdir, object_names, intrinsics, v
         print('%s: Visualization in %f seconds.' % (imgfile, (vis_finish - vis_start)))
 
 if __name__ == '__main__':
-    use_gpu = True
-    # use_gpu = False
+    # use_gpu = True
+    use_gpu = False
     #
-    # dataset = 'Occluded-LINEMOD'
-    # outdir = './Occluded-LINEMOD-Out'
+    dataset = 'Occluded-LINEMOD'
+    outdir = './Occluded-LINEMOD-Out'
     #
-    dataset = 'YCB-Video'
-    outdir = './YCB-Video-Out'
+    # dataset = 'YCB-Video'
+    # outdir = './YCB-Video-Out'
     #
     if dataset == 'Occluded-LINEMOD':
         # intrinsics of LINEMOD dataset
@@ -70,7 +70,7 @@ if __name__ == '__main__':
         vertex_linemod = np.load('./data/Occluded-LINEMOD/LINEMOD_vertex.npy')
         evaluate('./data/data-LINEMOD.cfg',
                              './model/occluded-linemod.pth',
-                             '/data/OcclusionChallengeICCV2015/test.txt',
+                             './occluded-linemod-testlist.txt',
                              outdir, object_names_occlinemod, k_linemod, vertex_linemod,
                              bestCnt=10, conf_thresh=0.3, linemod_index=True, use_gpu=use_gpu)
         #
@@ -89,7 +89,7 @@ if __name__ == '__main__':
         vertex_ycbvideo = np.load('./data/YCB-Video/YCB_vertex.npy')
         evaluate('./data/data-YCB.cfg',
                              './model/ycb-video.pth',
-                             '/data/YCB_Video_Dataset/test.txt',
+                             './ycb-video-testlist.txt',
                              outdir, object_names_ycbvideo, k_ycbvideo, vertex_ycbvideo,
                              bestCnt=10, conf_thresh=0.3, use_gpu=use_gpu)
     else:

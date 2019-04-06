@@ -1,5 +1,7 @@
-# Introduction
 
+# Overview
+
+This repository contains the code for the paper **Segmentation-driven 6D Object Pose Estimation**. Yinlin Hu, Joachim Hugonot, Pascal Fua, Mathieu Salzmann. CVPR. 2019. [\[Paper\]](https://arxiv.org/abs/1812.02541)
 
 The most recent trend in estimating the 6D pose of rigid objects has been to train deep networks to either directly regress the pose from the image or to predict the 2D locations of 3D keypoints, from which the pose can be obtained using a PnP algorithm. In both cases, the object is treated as a global entity, and a single pose estimate is computed. As a consequence, the resulting techniques can be vulnerable to large occlusions. 
 
@@ -11,7 +13,40 @@ Figure 1: Overall workflow of our method. Our architecture has two streams: One 
 
 ![](./images/fig2.jpg)
 
-Figure2: Occluded-LINEMOD results. In each column, we show, from top to bottom: the foreground segmentation mask, all 2D reprojection candidates, the selected 2D reprojections, and the final pose results. Our method generates accurate pose estimates, even in the presence of large occlusions. Furthermore, it can process multiple objects in real time.
+Figure 2: Occluded-LINEMOD results. In each column, we show, from top to bottom: the foreground segmentation mask, all 2D reprojection candidates, the selected 2D reprojections, and the final pose results. Our method generates accurate pose estimates, even in the presence of large occlusions. Furthermore, it can process multiple objects in real time.
+
+
+# How to Use
+
+## Step 1
+
+Download the datasets.
+
+Occluded-LINEMOD: https://hci.iwr.uni-heidelberg.de/vislearn/iccv2015-occlusion-challenge/
+
+YCB-Video: https://rse-lab.cs.washington.edu/projects/posecnn/
+
+
+## Step 2
+
+Download the pretrained model.
+
+Occluded-LINEMOD: https://1drv.ms/u/s!ApOY_gOHw8hLbbdmVZgnqk30I5A 
+
+YCB-Video: https://1drv.ms/u/s!ApOY_gOHw8hLbLl4i8CAXD6LGuU
+
+Download and put them into **./model** directory.
+
+*Due to commercial problem, we can only provide the code for inference. However, it is rather easy to implement the training part according to our [paper](https://arxiv.org/abs/1812.02541) and this repository.*
+
+## Step 3
+
+Prepare the input file list using **gen_filelist.py**.
+
+
+## Step 4
+
+Run **test.py** and explore it.
 
 # Citing
 
