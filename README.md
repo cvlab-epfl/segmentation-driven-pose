@@ -11,16 +11,7 @@ Figure 1: Overall workflow of our method. Our architecture has two streams: One 
 
 ![](./images/fig2.jpg)
 
-Figure 2: Outputs of our two-stream network. (a) The segmentation stream assigns a label to each cell of the virtual grid superposed on the image. (b) In the regression stream, each grid cell predicts the 2D keypoint locations of the object it belongs to. Here, we take the 8 bounding box corners to be our keypoints.
-
-![](./images/fig3.jpg)
-
-
-Figure 3: Combining pose candidates. (a) Grid cells predicted to belong to the cup are overlaid on the image. (b) Each one predicts 2D locations for the corresponding keypoints, shown as green dots. (c) For each 3D keypoint, the n=10 2D locations about which the network is most confident are selected. (d) Running a RANSAC-based PnP on these yields an accurate pose estimate, as evidenced by the correctly drawn outline. 
-
-![](./images/fig4.jpg)
-
-Figure4: Occluded-LINEMOD results. In each column, we show, from top to bottom: the foreground segmentation mask, all 2D reprojection candidates, the selected 2D reprojections, and the final pose results. Our method generates accurate pose estimates, even in the presence of large occlusions. Furthermore, it can process multiple objects in real time.
+Figure2: Occluded-LINEMOD results. In each column, we show, from top to bottom: the foreground segmentation mask, all 2D reprojection candidates, the selected 2D reprojections, and the final pose results. Our method generates accurate pose estimates, even in the presence of large occlusions. Furthermore, it can process multiple objects in real time.
 
 # Citing
 
