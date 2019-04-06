@@ -37,7 +37,7 @@ YCB-Video: https://1drv.ms/u/s!ApOY_gOHw8hLbLl4i8CAXD6LGuU
 
 Download and put them into **./model** directory.
 
-*Due to commercial problem, we can only provide the code for inference. However, it is rather easy to implement the training part according to our [paper](https://arxiv.org/abs/1812.02541) and this repository.*
+*Due to commercial problem, we can only provide the code for inference. However, it is straightforward to implement the training part according to our [paper](https://arxiv.org/abs/1812.02541) and this repository.*
 
 ## Step 3
 

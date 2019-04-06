@@ -7,10 +7,7 @@ class PoseSegLayer(nn.Module):
         super(PoseSegLayer, self).__init__()
         self.num_classes = int(options['classes'])
 
-    def forward(self, output, target=None, param = None):
-        seen = 0
-        if param:
-            seen = param[0]
+    def forward(self, output):
 
         # output : BxAs*(1+2*num_vpoints+num_classes)*H*W
         t0 = time.time()
