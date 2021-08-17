@@ -1,6 +1,8 @@
 
 # Overview
 
+** Please find the latest version at [WDR-Pose](https://github.com/cvlab-epfl/wide-depth-range-pose).**
+
 This repository contains the code for the paper **Segmentation-driven 6D Object Pose Estimation**. [Yinlin Hu](http://yinlinhu.github.io), [Joachim Hugonot](https://people.epfl.ch/joachim.hugonot), [Pascal Fua](http://people.epfl.ch/pascal.fua), [Mathieu Salzmann](http://people.epfl.ch/mathieu.salzmann). CVPR. 2019. [\[Paper\]](https://arxiv.org/abs/1812.02541)
 
 The most recent trend in estimating the 6D pose of rigid objects has been to train deep networks to either directly regress the pose from the image or to predict the 2D locations of 3D keypoints, from which the pose can be obtained using a PnP algorithm. In both cases, the object is treated as a global entity, and a single pose estimate is computed. As a consequence, the resulting techniques can be vulnerable to large occlusions. 
